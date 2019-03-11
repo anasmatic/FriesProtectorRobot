@@ -1,0 +1,10 @@
+
+Error : fatal error: 'ROSIntegration/Classes/RI/Topic.h' file not found
+solution : add this line to MyProject2.Build.cs?
+PrivateDependencyModuleNames.AddRange(new string[] { "ROSIntegration" });
+Source : https://github.com/code-iai/ROSIntegration/issues/45
+
+
+----------------------------------------------------------
+
+

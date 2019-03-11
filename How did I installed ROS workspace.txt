@@ -1,0 +1,14 @@
+mkdir ros_catkin_ws
+cd ros_catkin_ws
+mkdir src
+cd src
+catkin_init_workspace
+cd ..
+catkin_make
+source devel/setup.bash
+cd src
+catkin_create_pkg fries_protector std_msgs message_generation controller_manager
+catkin_make
+#if you face error while trying catkin_make, try this first:
+#sudo apt-get install ros-kinetic-controller-manager
+source devel/setup.bash
